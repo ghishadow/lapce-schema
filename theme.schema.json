@@ -1,0 +1,10 @@
+{
+    "$schema": "https://json-schema.org/draft-07/schema",
+    "$id": "https://github.com/ghishadow/lapce-schema/raw/main/theme.schema.json",
+    "title": "JSON schema for Lapce themes",
+    "type": "object",
+    "required": [
+        "color-theme",
+        "ui"
+    ]
+}
