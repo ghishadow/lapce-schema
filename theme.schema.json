@@ -1,586 +1,625 @@
 {
-    "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "https://github.com/ghishadow/lapce-schema/raw/main/theme.schema.json",
-    "title": "JSON schema for Lapce themes",
-    "type": "object",
-    "properties": {
-        "color-theme": {
-            "type": "object",
-            "properties": {
-                "name": {
-                    "type": "string"
-                },
-                "base": {
-                    "type": "object",
-                    "properties": {
-                        "white": {
-                            "type": "string"
-                        },
-                        "black": {
-                            "type": "string"
-                        },
-                        "grey": {
-                            "type": "string"
-                        },
-                        "blue": {
-                            "type": "string"
-                        },
-                        "red": {
-                            "type": "string"
-                        },
-                        "yellow": {
-                            "type": "string"
-                        },
-                        "orange": {
-                            "type": "string"
-                        },
-                        "green": {
-                            "type": "string"
-                        },
-                        "purple": {
-                            "type": "string"
-                        },
-                        "cyan": {
-                            "type": "string"
-                        },
-                        "magenta": {
-                            "type": "string"
-                        }
-                    },
-                    "required": [
-                        "white",
-                        "black",
-                        "grey",
-                        "blue",
-                        "red",
-                        "yellow",
-                        "orange",
-                        "green",
-                        "purple",
-                        "cyan",
-                        "magenta"
-                    ]
-                },
-                "syntax": {
-                    "type": "object",
-                    "properties": {
-                        "comment": {
-                            "type": "string"
-                        },
-                        "constant": {
-                            "type": "string"
-                        },
-                        "type": {
-                            "type": "string"
-                        },
-                        "typeAlias": {
-                            "type": "string"
-                        },
-                        "number": {
-                            "type": "string"
-                        },
-                        "enum": {
-                            "type": "string"
-                        },
-                        "struct": {
-                            "type": "string"
-                        },
-                        "structure": {
-                            "type": "string"
-                        },
-                        "interface": {
-                            "type": "string"
-                        },
-                        "attribute": {
-                            "type": "string"
-                        },
-                        "constructor": {
-                            "type": "string"
-                        },
-                        "function": {
-                            "type": "string"
-                        },
-                        "method": {
-                            "type": "string"
-                        },
-                        "function.method": {
-                            "type": "string"
-                        },
-                        "keyword": {
-                            "type": "string"
-                        },
-                        "selfKeyword": {
-                            "type": "string"
-                        },
-                        "field": {
-                            "type": "string"
-                        },
-                        "property": {
-                            "type": "string"
-                        },
-                        "enumMember": {
-                            "type": "string"
-                        },
-                        "enum-member": {
-                            "type": "string"
-                        },
-                        "string": {
-                            "type": "string"
-                        },
-                        "type.builtin": {
-                            "type": "string"
-                        },
-                        "builtinType": {
-                            "type": "string"
-                        },
-                        "escape": {
-                            "type": "string"
-                        },
-                        "string.escape": {
-                            "type": "string"
-                        },
-                        "embedded": {
-                            "type": "string"
-                        },
-                        "punctuation.delimiter": {
-                            "type": "string"
-                        },
-                        "text.title": {
-                            "type": "string"
-                        },
-                        "text.uri": {
-                            "type": "string"
-                        },
-                        "text.reference": {
-                            "type": "string"
-                        },
-                        "variable": {
-                            "type": "string"
-                        },
-                        "variable.other.member": {
-                            "type": "string"
-                        },
-                        "tag": {
-                            "type": "string"
-                        }
-                    },
-                    "required": [
-                        "comment",
-                        "constant",
-                        "type",
-                        "typeAlias",
-                        "number",
-                        "enum",
-                        "struct",
-                        "structure",
-                        "interface",
-                        "attribute",
-                        "constructor",
-                        "function",
-                        "method",
-                        "function.method",
-                        "keyword",
-                        "selfKeyword",
-                        "field",
-                        "property",
-                        "enumMember",
-                        "enum-member",
-                        "string",
-                        "type.builtin",
-                        "builtinType",
-                        "escape",
-                        "string.escape",
-                        "embedded",
-                        "punctuation.delimiter",
-                        "text.title",
-                        "text.uri",
-                        "text.reference",
-                        "variable",
-                        "variable.other.member",
-                        "tag"
-                    ]
-                },
-                "ui": {
-                    "type": "object",
-                    "properties": {
-                        "lapce.error": {
-                            "type": "string"
-                        },
-                        "lapce.warn": {
-                            "type": "string"
-                        },
-                        "lapce.dropdown_shadow": {
-                            "type": "string"
-                        },
-                        "lapce.border": {
-                            "type": "string"
-                        },
-                        "lapce.scroll_bar": {
-                            "type": "string"
-                        },
-                        "lapce.button.primary.background": {
-                            "type": "string"
-                        },
-                        "lapce.button.primary.foreground": {
-                            "type": "string"
-                        },
-                        "lapce.tab.active.background": {
-                            "type": "string"
-                        },
-                        "lapce.tab.active.foreground": {
-                            "type": "string"
-                        },
-                        "lapce.tab.active.underline": {
-                            "type": "string"
-                        },
-                        "lapce.tab.inactive.background": {
-                            "type": "string"
-                        },
-                        "lapce.tab.inactive.foreground": {
-                            "type": "string"
-                        },
-                        "lapce.tab.inactive.underline": {
-                            "type": "string"
-                        },
-                        "lapce.tab.separator": {
-                            "type": "string"
-                        },
-                        "lapce.icon.active": {
-                            "type": "string"
-                        },
-                        "lapce.icon.inactive": {
-                            "type": "string"
-                        },
-                        "lapce.remote.local": {
-                            "type": "string"
-                        },
-                        "lapce.remote.connected": {
-                            "type": "string"
-                        },
-                        "lapce.remote.connecting": {
-                            "type": "string"
-                        },
-                        "lapce.remote.disconnected": {
-                            "type": "string"
-                        },
-                        "lapce.plugin.name": {
-                            "type": "string"
-                        },
-                        "lapce.plugin.description": {
-                            "type": "string"
-                        },
-                        "lapce.plugin.author": {
-                            "type": "string"
-                        },
-                        "editor.background": {
-                            "type": "string"
-                        },
-                        "editor.foreground": {
-                            "type": "string"
-                        },
-                        "editor.dim": {
-                            "type": "string"
-                        },
-                        "editor.focus": {
-                            "type": "string"
-                        },
-                        "editor.caret": {
-                            "type": "string"
-                        },
-                        "editor.selection": {
-                            "type": "string"
-                        },
-                        "editor.current_line": {
-                            "type": "string"
-                        },
-                        "editor.link": {
-                            "type": "string"
-                        },
-                        "editor.visible_whitespace": {
-                            "type": "string"
-                        },
-                        "editor.indent_guide": {
-                            "type": "string"
-                        },
-                        "editor.drag_drop_background": {
-                            "type": "string"
-                        },
-                        "editor.drag_drop_tab_background": {
-                            "type": "string"
-                        },
-                        "inlay_hint.foreground": {
-                            "type": "string"
-                        },
-                        "inlay_hint.background": {
-                            "type": "string"
-                        },
-                        "error_lens.error.foreground": {
-                            "type": "string"
-                        },
-                        "error_lens.error.background": {
-                            "type": "string"
-                        },
-                        "error_lens.warning.foreground": {
-                            "type": "string"
-                        },
-                        "error_lens.warning.background": {
-                            "type": "string"
-                        },
-                        "error_lens.other.foreground": {
-                            "type": "string"
-                        },
-                        "error_lens.other.background": {
-                            "type": "string"
-                        },
-                        "source_control.added": {
-                            "type": "string"
-                        },
-                        "source_control.removed": {
-                            "type": "string"
-                        },
-                        "source_control.modified": {
-                            "type": "string"
-                        },
-                        "palette.background": {
-                            "type": "string"
-                        },
-                        "palette.current": {
-                            "type": "string"
-                        },
-                        "completion.background": {
-                            "type": "string"
-                        },
-                        "completion.current": {
-                            "type": "string"
-                        },
-                        "hover.background": {
-                            "type": "string"
-                        },
-                        "activity.background": {
-                            "type": "string"
-                        },
-                        "activity.current": {
-                            "type": "string"
-                        },
-                        "panel.background": {
-                            "type": "string"
-                        },
-                        "panel.current": {
-                            "type": "string"
-                        },
-                        "panel.hovered": {
-                            "type": "string"
-                        },
-                        "status.background": {
-                            "type": "string"
-                        },
-                        "status.modal.normal": {
-                            "type": "string"
-                        },
-                        "status.modal.insert": {
-                            "type": "string"
-                        },
-                        "status.modal.visual": {
-                            "type": "string"
-                        },
-                        "status.modal.terminal": {
-                            "type": "string"
-                        },
-                        "markdown.blockquote": {
-                            "type": "string"
-                        },
-                        "terminal.cursor": {
-                            "type": "string"
-                        },
-                        "terminal.foreground": {
-                            "type": "string"
-                        },
-                        "terminal.background": {
-                            "type": "string"
-                        },
-                        "terminal.white": {
-                            "type": "string"
-                        },
-                        "terminal.black": {
-                            "type": "string"
-                        },
-                        "terminal.red": {
-                            "type": "string"
-                        },
-                        "terminal.blue": {
-                            "type": "string"
-                        },
-                        "terminal.green": {
-                            "type": "string"
-                        },
-                        "terminal.yellow": {
-                            "type": "string"
-                        },
-                        "terminal.cyan": {
-                            "type": "string"
-                        },
-                        "terminal.magenta": {
-                            "type": "string"
-                        },
-                        "terminal.bright_white": {
-                            "type": "string"
-                        },
-                        "terminal.bright_red": {
-                            "type": "string"
-                        },
-                        "terminal.bright_blue": {
-                            "type": "string"
-                        },
-                        "terminal.bright_green": {
-                            "type": "string"
-                        },
-                        "terminal.bright_yellow": {
-                            "type": "string"
-                        },
-                        "terminal.bright_cyan": {
-                            "type": "string"
-                        },
-                        "terminal.bright_magenta": {
-                            "type": "string"
-                        },
-                        "terminal.bright_black": {
-                            "type": "string"
-                        }
-                    },
-                    "required": [
-                        "lapce.error",
-                        "lapce.warn",
-                        "lapce.dropdown_shadow",
-                        "lapce.border",
-                        "lapce.scroll_bar",
-                        "lapce.button.primary.background",
-                        "lapce.button.primary.foreground",
-                        "lapce.tab.active.background",
-                        "lapce.tab.active.foreground",
-                        "lapce.tab.active.underline",
-                        "lapce.tab.inactive.background",
-                        "lapce.tab.inactive.foreground",
-                        "lapce.tab.inactive.underline",
-                        "lapce.tab.separator",
-                        "lapce.icon.active",
-                        "lapce.icon.inactive",
-                        "lapce.remote.local",
-                        "lapce.remote.connected",
-                        "lapce.remote.connecting",
-                        "lapce.remote.disconnected",
-                        "lapce.plugin.name",
-                        "lapce.plugin.description",
-                        "lapce.plugin.author",
-                        "editor.background",
-                        "editor.foreground",
-                        "editor.dim",
-                        "editor.focus",
-                        "editor.caret",
-                        "editor.selection",
-                        "editor.current_line",
-                        "editor.link",
-                        "editor.visible_whitespace",
-                        "editor.indent_guide",
-                        "editor.drag_drop_background",
-                        "editor.drag_drop_tab_background",
-                        "inlay_hint.foreground",
-                        "inlay_hint.background",
-                        "error_lens.error.foreground",
-                        "error_lens.error.background",
-                        "error_lens.warning.foreground",
-                        "error_lens.warning.background",
-                        "error_lens.other.foreground",
-                        "error_lens.other.background",
-                        "source_control.added",
-                        "source_control.removed",
-                        "source_control.modified",
-                        "palette.background",
-                        "palette.current",
-                        "completion.background",
-                        "completion.current",
-                        "hover.background",
-                        "activity.background",
-                        "activity.current",
-                        "panel.background",
-                        "panel.current",
-                        "panel.hovered",
-                        "status.background",
-                        "status.modal.normal",
-                        "status.modal.insert",
-                        "status.modal.visual",
-                        "status.modal.terminal",
-                        "markdown.blockquote",
-                        "terminal.cursor",
-                        "terminal.foreground",
-                        "terminal.background",
-                        "terminal.white",
-                        "terminal.black",
-                        "terminal.red",
-                        "terminal.blue",
-                        "terminal.green",
-                        "terminal.yellow",
-                        "terminal.cyan",
-                        "terminal.magenta",
-                        "terminal.bright_white",
-                        "terminal.bright_red",
-                        "terminal.bright_blue",
-                        "terminal.bright_green",
-                        "terminal.bright_yellow",
-                        "terminal.bright_cyan",
-                        "terminal.bright_magenta",
-                        "terminal.bright_black"
-                    ]
-                }
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Generated schema for Root",
+  "type": "object",
+  "properties": {
+    "color-theme": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "base": {
+          "type": "object",
+          "properties": {
+            "black": {
+              "type": "string"
             },
-            "required": [
-                "name",
-                "base",
-                "syntax",
-                "ui"
-            ]
+            "blue": {
+              "type": "string"
+            },
+            "cyan": {
+              "type": "string"
+            },
+            "green": {
+              "type": "string"
+            },
+            "grey": {
+              "type": "string"
+            },
+            "magenta": {
+              "type": "string"
+            },
+            "orange": {
+              "type": "string"
+            },
+            "purple": {
+              "type": "string"
+            },
+            "red": {
+              "type": "string"
+            },
+            "white": {
+              "type": "string"
+            },
+            "yellow": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "black",
+            "blue",
+            "cyan",
+            "green",
+            "grey",
+            "magenta",
+            "orange",
+            "purple",
+            "red",
+            "white",
+            "yellow"
+          ]
+        },
+        "syntax": {
+          "type": "object",
+          "properties": {
+            "comment": {
+              "type": "string"
+            },
+            "constant": {
+              "type": "string"
+            },
+            "type": {
+              "type": "string"
+            },
+            "typeAlias": {
+              "type": "string"
+            },
+            "number": {
+              "type": "string"
+            },
+            "enum": {
+              "type": "string"
+            },
+            "struct": {
+              "type": "string"
+            },
+            "structure": {
+              "type": "string"
+            },
+            "interface": {
+              "type": "string"
+            },
+            "attribute": {
+              "type": "string"
+            },
+            "constructor": {
+              "type": "string"
+            },
+            "function": {
+              "type": "string"
+            },
+            "method": {
+              "type": "string"
+            },
+            "function.method": {
+              "type": "string"
+            },
+            "keyword": {
+              "type": "string"
+            },
+            "selfKeyword": {
+              "type": "string"
+            },
+            "field": {
+              "type": "string"
+            },
+            "property": {
+              "type": "string"
+            },
+            "enumMember": {
+              "type": "string"
+            },
+            "enum-member": {
+              "type": "string"
+            },
+            "string": {
+              "type": "string"
+            },
+            "type.builtin": {
+              "type": "string"
+            },
+            "builtinType": {
+              "type": "string"
+            },
+            "escape": {
+              "type": "string"
+            },
+            "string.escape": {
+              "type": "string"
+            },
+            "embedded": {
+              "type": "string"
+            },
+            "punctuation.delimiter": {
+              "type": "string"
+            },
+            "text.title": {
+              "type": "string"
+            },
+            "text.uri": {
+              "type": "string"
+            },
+            "text.reference": {
+              "type": "string"
+            },
+            "variable": {
+              "type": "string"
+            },
+            "variable.other.member": {
+              "type": "string"
+            },
+            "tag": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "comment",
+            "constant",
+            "type",
+            "typeAlias",
+            "number",
+            "enum",
+            "struct",
+            "structure",
+            "interface",
+            "attribute",
+            "constructor",
+            "function",
+            "method",
+            "function.method",
+            "keyword",
+            "selfKeyword",
+            "field",
+            "property",
+            "enumMember",
+            "enum-member",
+            "string",
+            "type.builtin",
+            "builtinType",
+            "escape",
+            "string.escape",
+            "embedded",
+            "punctuation.delimiter",
+            "text.title",
+            "text.uri",
+            "text.reference",
+            "variable",
+            "variable.other.member",
+            "tag"
+          ]
         },
         "ui": {
-            "type": "object",
-            "properties": {
-                "font-family": {
-                    "type": "string"
-                },
-                "font-size": {
-                    "type": "number"
-                },
-                "header-height": {
-                    "type": "number"
-                },
-                "status-height": {
-                    "type": "number"
-                },
-                "tab-min-width": {
-                    "type": "number"
-                },
-                "activity-width": {
-                    "type": "number"
-                },
-                "scroll-width": {
-                    "type": "number"
-                },
-                "drop-shadow-width": {
-                    "type": "number"
-                }
+          "type": "object",
+          "properties": {
+            "lapce.error": {
+              "type": "string"
             },
-            "required": [
-                "font-family",
-                "font-size",
-                "header-height",
-                "status-height",
-                "tab-min-width",
-                "activity-width",
-                "scroll-width",
-                "drop-shadow-width"
-            ]
+            "lapce.warn": {
+              "type": "string"
+            },
+            "lapce.dropdown_shadow": {
+              "type": "string"
+            },
+            "lapce.border": {
+              "type": "string"
+            },
+            "lapce.scroll_bar": {
+              "type": "string"
+            },
+            "lapce.button.primary.background": {
+              "type": "string"
+            },
+            "lapce.button.primary.foreground": {
+              "type": "string"
+            },
+            "lapce.tab.active.background": {
+              "type": "string"
+            },
+            "lapce.tab.active.foreground": {
+              "type": "string"
+            },
+            "lapce.tab.active.underline": {
+              "type": "string"
+            },
+            "lapce.tab.inactive.background": {
+              "type": "string"
+            },
+            "lapce.tab.inactive.foreground": {
+              "type": "string"
+            },
+            "lapce.tab.inactive.underline": {
+              "type": "string"
+            },
+            "lapce.tab.separator": {
+              "type": "string"
+            },
+            "lapce.icon.active": {
+              "type": "string"
+            },
+            "lapce.icon.inactive": {
+              "type": "string"
+            },
+            "lapce.remote.local": {
+              "type": "string"
+            },
+            "lapce.remote.connected": {
+              "type": "string"
+            },
+            "lapce.remote.connecting": {
+              "type": "string"
+            },
+            "lapce.remote.disconnected": {
+              "type": "string"
+            },
+            "lapce.plugin.name": {
+              "type": "string"
+            },
+            "lapce.plugin.description": {
+              "type": "string"
+            },
+            "lapce.plugin.author": {
+              "type": "string"
+            },
+            "editor.background": {
+              "type": "string"
+            },
+            "editor.foreground": {
+              "type": "string"
+            },
+            "editor.dim": {
+              "type": "string"
+            },
+            "editor.focus": {
+              "type": "string"
+            },
+            "editor.caret": {
+              "type": "string"
+            },
+            "editor.selection": {
+              "type": "string"
+            },
+            "editor.current_line": {
+              "type": "string"
+            },
+            "editor.link": {
+              "type": "string"
+            },
+            "editor.visible_whitespace": {
+              "type": "string"
+            },
+            "editor.indent_guide": {
+              "type": "string"
+            },
+            "editor.drag_drop_background": {
+              "type": "string"
+            },
+            "editor.drag_drop_tab_background": {
+              "type": "string"
+            },
+            "editor.sticky_header_background": {
+              "type": "string"
+            },
+            "inlay_hint.foreground": {
+              "type": "string"
+            },
+            "inlay_hint.background": {
+              "type": "string"
+            },
+            "error_lens.error.foreground": {
+              "type": "string"
+            },
+            "error_lens.error.background": {
+              "type": "string"
+            },
+            "error_lens.warning.foreground": {
+              "type": "string"
+            },
+            "error_lens.warning.background": {
+              "type": "string"
+            },
+            "error_lens.other.foreground": {
+              "type": "string"
+            },
+            "error_lens.other.background": {
+              "type": "string"
+            },
+            "source_control.added": {
+              "type": "string"
+            },
+            "source_control.removed": {
+              "type": "string"
+            },
+            "source_control.modified": {
+              "type": "string"
+            },
+            "palette.background": {
+              "type": "string"
+            },
+            "palette.foreground": {
+              "type": "string"
+            },
+            "palette.current.background": {
+              "type": "string"
+            },
+            "palette.current.foreground": {
+              "type": "string"
+            },
+            "completion.background": {
+              "type": "string"
+            },
+            "completion.current": {
+              "type": "string"
+            },
+            "hover.background": {
+              "type": "string"
+            },
+            "activity.background": {
+              "type": "string"
+            },
+            "activity.current": {
+              "type": "string"
+            },
+            "panel.background": {
+              "type": "string"
+            },
+            "panel.foreground": {
+              "type": "string"
+            },
+            "panel.foreground.dim": {
+              "type": "string"
+            },
+            "panel.current.background": {
+              "type": "string"
+            },
+            "panel.current.foreground": {
+              "type": "string"
+            },
+            "panel.current.foreground.dim": {
+              "type": "string"
+            },
+            "panel.hovered.background": {
+              "type": "string"
+            },
+            "panel.hovered.foreground": {
+              "type": "string"
+            },
+            "panel.hovered.foreground.dim": {
+              "type": "string"
+            },
+            "status.background": {
+              "type": "string"
+            },
+            "status.foreground": {
+              "type": "string"
+            },
+            "status.modal.normal": {
+              "type": "string"
+            },
+            "status.modal.insert": {
+              "type": "string"
+            },
+            "status.modal.visual": {
+              "type": "string"
+            },
+            "status.modal.terminal": {
+              "type": "string"
+            },
+            "markdown.blockquote": {
+              "type": "string"
+            },
+            "terminal.cursor": {
+              "type": "string"
+            },
+            "terminal.foreground": {
+              "type": "string"
+            },
+            "terminal.background": {
+              "type": "string"
+            },
+            "terminal.white": {
+              "type": "string"
+            },
+            "terminal.black": {
+              "type": "string"
+            },
+            "terminal.red": {
+              "type": "string"
+            },
+            "terminal.blue": {
+              "type": "string"
+            },
+            "terminal.green": {
+              "type": "string"
+            },
+            "terminal.yellow": {
+              "type": "string"
+            },
+            "terminal.cyan": {
+              "type": "string"
+            },
+            "terminal.magenta": {
+              "type": "string"
+            },
+            "terminal.bright_white": {
+              "type": "string"
+            },
+            "terminal.bright_red": {
+              "type": "string"
+            },
+            "terminal.bright_blue": {
+              "type": "string"
+            },
+            "terminal.bright_green": {
+              "type": "string"
+            },
+            "terminal.bright_yellow": {
+              "type": "string"
+            },
+            "terminal.bright_cyan": {
+              "type": "string"
+            },
+            "terminal.bright_magenta": {
+              "type": "string"
+            },
+            "terminal.bright_black": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "lapce.error",
+            "lapce.warn",
+            "lapce.dropdown_shadow",
+            "lapce.border",
+            "lapce.scroll_bar",
+            "lapce.button.primary.background",
+            "lapce.button.primary.foreground",
+            "lapce.tab.active.background",
+            "lapce.tab.active.foreground",
+            "lapce.tab.active.underline",
+            "lapce.tab.inactive.background",
+            "lapce.tab.inactive.foreground",
+            "lapce.tab.inactive.underline",
+            "lapce.tab.separator",
+            "lapce.icon.active",
+            "lapce.icon.inactive",
+            "lapce.remote.local",
+            "lapce.remote.connected",
+            "lapce.remote.connecting",
+            "lapce.remote.disconnected",
+            "lapce.plugin.name",
+            "lapce.plugin.description",
+            "lapce.plugin.author",
+            "editor.background",
+            "editor.foreground",
+            "editor.dim",
+            "editor.focus",
+            "editor.caret",
+            "editor.selection",
+            "editor.current_line",
+            "editor.link",
+            "editor.visible_whitespace",
+            "editor.indent_guide",
+            "editor.drag_drop_background",
+            "editor.drag_drop_tab_background",
+            "editor.sticky_header_background",
+            "inlay_hint.foreground",
+            "inlay_hint.background",
+            "error_lens.error.foreground",
+            "error_lens.error.background",
+            "error_lens.warning.foreground",
+            "error_lens.warning.background",
+            "error_lens.other.foreground",
+            "error_lens.other.background",
+            "source_control.added",
+            "source_control.removed",
+            "source_control.modified",
+            "palette.background",
+            "palette.foreground",
+            "palette.current.background",
+            "palette.current.foreground",
+            "completion.background",
+            "completion.current",
+            "hover.background",
+            "activity.background",
+            "activity.current",
+            "panel.background",
+            "panel.foreground",
+            "panel.foreground.dim",
+            "panel.current.background",
+            "panel.current.foreground",
+            "panel.current.foreground.dim",
+            "panel.hovered.background",
+            "panel.hovered.foreground",
+            "panel.hovered.foreground.dim",
+            "status.background",
+            "status.foreground",
+            "status.modal.normal",
+            "status.modal.insert",
+            "status.modal.visual",
+            "status.modal.terminal",
+            "markdown.blockquote",
+            "terminal.cursor",
+            "terminal.foreground",
+            "terminal.background",
+            "terminal.white",
+            "terminal.black",
+            "terminal.red",
+            "terminal.blue",
+            "terminal.green",
+            "terminal.yellow",
+            "terminal.cyan",
+            "terminal.magenta",
+            "terminal.bright_white",
+            "terminal.bright_red",
+            "terminal.bright_blue",
+            "terminal.bright_green",
+            "terminal.bright_yellow",
+            "terminal.bright_cyan",
+            "terminal.bright_magenta",
+            "terminal.bright_black"
+          ]
         }
-    },
-    "required": [
-        "color-theme",
+      },
+      "required": [
+        "name",
+        "base",
+        "syntax",
         "ui"
-    ]
+      ]
+    },
+    "ui": {
+      "type": "object",
+      "properties": {
+        "font-family": {
+          "type": "string"
+        },
+        "font-size": {
+          "type": "number"
+        },
+        "header-height": {
+          "type": "number"
+        },
+        "status-height": {
+          "type": "number"
+        },
+        "tab-min-width": {
+          "type": "number"
+        },
+        "activity-width": {
+          "type": "number"
+        },
+        "scroll-width": {
+          "type": "number"
+        },
+        "drop-shadow-width": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "font-family",
+        "font-size",
+        "header-height",
+        "status-height",
+        "tab-min-width",
+        "activity-width",
+        "scroll-width",
+        "drop-shadow-width"
+      ]
+    }
+  },
+  "required": [
+    "color-theme",
+    "ui"
+  ]
 }
