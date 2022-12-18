@@ -1,6 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "Generated schema for Root",
+  "$id": "https://github.com/ghishadow/lapce-schema/raw/main/theme.schema.json",
+  "title": "JSON schema for Lapce themes",
   "type": "object",
   "properties": {
     "color-theme": {
